@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <title>V1. 나만의 원페이지 쇼핑몰 만들기</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+          crossorigin="anonymous">
+
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pathway+Gothic+One&display=swap" rel="stylesheet">
+
+    <style type="text/css">
+        * {
+            font-family: 'Nanum Gothic', sans-serif;
+        }
+
+        header {
+            border-bottom: solid lightgray 1px;
+        }
+
+        .nav {
+            width: 1000px;
+            margin: auto;
+        }
+
+        .logo {
+            margin: 20px;
+            padding: 0px 10px;
+        }
+
+        .wrap {
+            width: 500px;
+            margin: auto;
+        }
+
+        .product-image {
+            width: fit-content;
+            margin: 50px auto 30px;
+        }
+
+        .product-info {
+            /*border: #777777 solid 1px;*/
+            padding: 20px;
+        }
+
+        .txt-subtitle {
+            font-size: 14px;
+            font-weight: bold;
+            color: #777777;
+            width: fit-content;
+            margin: auto;
+        }
+
+        .txt-title {
+            font-family: 'Pathway Gothic One', sans-serif;
+            font-size: 40px;
+            font-weight: bolder;
+            margin: 5px auto 10px;
+            width: fit-content;
+        }
+
+        .price {
+            font-size: 16px;
+            font-weight: bold;
+            width: fit-content;
+            margin: auto;
+        }
+
+        .txt-description {
+            font-size: 13px;
+            color: #999999;
+            text-align: justify;
+            margin: 30px 0px 0px;
+            padding: 0px 90px;
+        }
+
+        .product-order {
+            /*border: #777777 solid 1px;*/
+            margin: 0px 0px 50px;
+            padding: 20px;
+        }
+
+        .txt-order {
+            font-family: 'Pathway Gothic One', sans-serif;
+            font-size: 34px;
+            font-weight: bolder;
+            color: #777777;
+            margin: 0px auto 10px;
+            width: fit-content;
+            /*border-bottom: #777777 solid 1px;*/
+        }
+
+        .order-info {
+            margin: 40px 0px 40px;
+            padding: 0px 90px;
+        }
+
+        .order {
+            width: fit-content;
+            margin: 10px auto 20px;
+        }
+
+        .input-group-text {
+            font-size: 13px;
+        }
+
+        .custom-select {
+            font-size: 13px;
+        }
+
+        .order-btn {
+            padding: 5px 20px;
+            font-size: 13px;
+            background-color: white;
+            border: solid 1px #999999;
+            border-radius: 4px;
+        }
+    </style>
+
+    <script>
+        function order() {
+            alert('주문이 완료되었습니다.');
+        }
+    </script>
+</head>
+<body>
+<header>
+    <div class="nav">
+        <div class="logo">
+            <img width="80px" src="https://pluspng.com/img-png/nike-logo-png-nike-logo-png-4944.png" alt="NIKE">
+        </div>
+    </div>
+</header>
+<div class="wrap">
+    <div class="product-image">
+        <img width="400px" alt=""
+             data-product-image="https://static-breeze.nike.co.kr/kr/launch/cmsstatic/product/CU9180-102/f1142c64-137a-4225-8795-d1567fe910dc_primary.jpg"
+             src="https://static-breeze.nike.co.kr/kr/launch/cmsstatic/product/CU9180-102/f1142c64-137a-4225-8795-d1567fe910dc_primary.jpg?gallery">
+    </div>
+    <div class="product-info">
+        <h1 class="txt-subtitle">킬샷 OG</h1>
+        <h5 class="txt-title">MIDNIGHT NAVY</h5>
+        <div class="price">109,000 원</div>
+        <div class="txt-description">
+            <p>
+                오리지널 로우 프로파일 테니스화가 화려한 귀환을 알립니다. 빈티지한 소재를 다양하게 활용하여 레트로한 매력과 놀라운 정교함을 갖춘, 그 어느 때보다 근사해진 디자인이 돋보입니다. 오픈
+                메쉬와 눈에 보이는 폼에 부드러운 스웨이드 오버레이와 헤리티지에서 영감을 받은 밑창이 어우러져 푹신하고 편안한 착화감을 제공하는 동시에 코트에 어울리는 스타일을 연출합니다. 설포의 겉으로
+                드러낸 폼은 디컨스트럭티드(deconstructed) 무드를 불어넣으며 오랜 사랑을 받아온 이전 모델에 충실한 분위기를 완성합니다.
+            </p>
+        </div>
+    </div>
+    <hr>
+    <div class="product-order">
+        <h1 class="txt-order">ORDER</h1>
+        <div class="order-info">
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text">주문자 이름</span>
+                </div>
+                <input type="text" class="form-control" id="order-name">
+            </div>
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <label class="input-group-text">사이즈</label>
+                </div>
+                <select class="custom-select" id="order-count">
+                    <option selected value=""> -- 사이즈를 선택하세요 --</option>
+                    <option value="1">240</option>
+                    <option value="2">260</option>
+                    <option value="3">280</option>
+                </select>
+            </div>
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text">주소</span>
+                </div>
+                <input type="text" class="form-control" id="order-address">
+            </div>
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text">전화번호</span>
+                </div>
+                <input type="text" class="form-control" id="order-phone">
+            </div>
+        </div>
+        <div class="order">
+            <button onclick="order()" type="button" class="order-btn">주문하기</button>
+        </div>
+    </div>
+</div>
+</body>
+</html>
